@@ -22,4 +22,5 @@ db.Sequelize = sequelize;
 
 //define semua models yg ada pada apk
 db.quizzes = require('./quiz')(sequelize, Sequelize);
+db.users = require('./user')(sequelize, Sequelize);
 module.exports = db;
